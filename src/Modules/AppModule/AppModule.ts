@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './Components/AppComponent/AppComponent';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import AppComponent from "./Components/AppComponent/AppComponent";
 
 @NgModule({
   declarations: [AppComponent],

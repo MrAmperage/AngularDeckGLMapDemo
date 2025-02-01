@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'AppComponent',
-  templateUrl: './AppComponent.html',
-  styleUrls: ['./AppComponent.css'],
+  selector: "AppComponent",
+  templateUrl: "./AppComponent.html",
+  styleUrls: ["./AppComponent.css"],
+  standalone: false,
 })
-export class AppComponent {
-  title = 'AngularMapLibreGLDemo';
-}
+export default class AppComponent {}
