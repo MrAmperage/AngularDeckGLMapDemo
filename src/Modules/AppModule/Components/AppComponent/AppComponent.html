@@ -1,13 +1,12 @@
-<MapComponent [Center]="[-122.4,37.34]" [Zoom]="14">
+<MapComponent [Center]="[87.15609686851167,54.22993514648337]" [Zoom]="14">
   <TerrainLayerComponent
     [ElevationDecoder]="{   
       rScaler: 2,
       gScaler: 0,
       bScaler: 0,
       offset: 0}"
-    [ElevationData]="'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/terrain.png'"
+    [ElevationData]="'https://s3.amazonaws.com/elevation-tiles-prod/normal/{z}/{x}/{y}.png'"
     [Interleaved]="true"
-    [Bounds]="[-122.5233, 37.6493, -122.3566, 37.8159]"
-    [Texture]="'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/terrain-mask.png'"
+    [Texture]="'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'"
   ></TerrainLayerComponent>
 </MapComponent>
