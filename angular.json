@@ -22,7 +22,8 @@
             "styles": [
               "src/styles.css",
               "node_modules/maplibre-gl/dist/maplibre-gl.css",
-              "node_modules/angular-map-libre-gl/Styles/Styles.css"
+              "node_modules/angular-map-libre-gl/Styles/Styles.css",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": [],
             "preserveSymlinks": true
