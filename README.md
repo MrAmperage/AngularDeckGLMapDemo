@@ -1,2 +1,4 @@
-# AngularMapLibreGLDemo
-Demo проект с использованием AngularMapLibreGL
+# AngularDeckGLMapDemo
+
+Demo проект с использованием AngularDeckGLMap
+
