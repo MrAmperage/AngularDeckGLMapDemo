@@ -2,20 +2,15 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import AppComponent from "./Components/AppComponent/AppComponent";
 import {
-  DrillingProjectMapPluginComponent,
-  MapComponent,
-  TerrainLayerComponent,
-} from "angular-map-libre-gl";
+  TileLayerComponent,
+  DeckGLComponent,
+  TerrainLayer,
+} from "angular-deck.gl-map";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    MapComponent,
-    TerrainLayerComponent,
-    DrillingProjectMapPluginComponent,
-  ],
-  providers: [MapComponent],
+  imports: [BrowserModule, DeckGLComponent, TileLayerComponent, TerrainLayer],
+  providers: [DeckGLComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,13 +1,12 @@
-<MapComponent [Center]="[87.15609686851167,54.22993514648337]" [Zoom]="14">
-  <DrillingProjectMapPluginComponent />
+<DeckGLComponent [Center]="[87.15609686851167,54.22993514648337]" [Zoom]="14">
   <TerrainLayerComponent
+    [Id]="'TerrainLayer'"
     [ElevationDecoder]="{   
       rScaler: 2,
       gScaler: 0,
       bScaler: 0,
       offset: 0}"
     [ElevationData]="'https://s3.amazonaws.com/elevation-tiles-prod/normal/{z}/{x}/{y}.png'"
-    [Interleaved]="true"
     [Texture]="'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'"
-  ></TerrainLayerComponent>
-</MapComponent>
+  />
+</DeckGLComponent>
