@@ -5,11 +5,20 @@ import {
   TileLayerComponent,
   DeckGLComponent,
   TerrainLayer,
+  DrillingProjectLoaderComponent,
+  ToolbarWidgetComponent,
 } from "angular-deck.gl-map";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, DeckGLComponent, TileLayerComponent, TerrainLayer],
+  imports: [
+    BrowserModule,
+    DeckGLComponent,
+    TileLayerComponent,
+    TerrainLayer,
+    DrillingProjectLoaderComponent,
+    ToolbarWidgetComponent,
+  ],
   providers: [DeckGLComponent],
   bootstrap: [AppComponent],
 })
