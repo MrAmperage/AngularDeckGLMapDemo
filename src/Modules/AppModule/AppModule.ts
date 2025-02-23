@@ -7,6 +7,7 @@ import {
   TerrainLayer,
   DrillingProjectLoaderComponent,
   ToolbarWidgetComponent,
+  MapService,
 } from "angular-deck.gl-map";
 
 @NgModule({
@@ -19,7 +20,7 @@ import {
     DrillingProjectLoaderComponent,
     ToolbarWidgetComponent,
   ],
-  providers: [DeckGLComponent],
+  providers: [DeckGLComponent, MapService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
