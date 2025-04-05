@@ -13,6 +13,9 @@ import { provideNzConfig } from "ng-zorro-antd/core/config";
 import { GlobalNgZorroConfig } from "./NzConfig";
 import { provideNzI18n, ru_RU } from "ng-zorro-antd/i18n";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { registerLocaleData } from "@angular/common";
+import ru from "@angular/common/locales/ru";
+registerLocaleData(ru);
 
 @NgModule({
   declarations: [AppComponent],
