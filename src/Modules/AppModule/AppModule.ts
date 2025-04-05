@@ -9,6 +9,9 @@ import {
   ToolbarWidgetComponent,
   MapService,
 } from "angular-deck.gl-map";
+import { provideNzConfig } from "ng-zorro-antd/core/config";
+import { GlobalNgZorroConfig } from "./NzConfig";
+import { provideNzI18n, ru_RU } from "ng-zorro-antd/i18n";
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +23,12 @@ import {
     DrillingProjectLoaderComponent,
     ToolbarWidgetComponent,
   ],
-  providers: [DeckGLComponent, MapService],
+  providers: [
+    DeckGLComponent,
+    MapService,
+    provideNzConfig(GlobalNgZorroConfig),
+    provideNzI18n(ru_RU),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
