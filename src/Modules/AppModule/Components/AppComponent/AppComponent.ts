@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { CustomMapController } from "angular-deck.gl-map";
 
 @Component({
   selector: "AppComponent",
@@ -6,4 +7,6 @@ import { Component } from "@angular/core";
   styleUrls: ["./AppComponent.css"],
   standalone: false,
 })
-export default class AppComponent {}
+export default class AppComponent {
+  MapController = CustomMapController;
+}
