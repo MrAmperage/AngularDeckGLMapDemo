@@ -10,7 +10,7 @@ import {
   MapService,
 } from "angular-deck.gl-map";
 import { provideNzConfig } from "ng-zorro-antd/core/config";
-import { GlobalNgZorroConfig } from "./NzConfig";
+import { GlobalNgZorroConfig, GlobalNzZorroDateProvider } from "./NzConfig";
 import { provideNzI18n, ru_RU } from "ng-zorro-antd/i18n";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { registerLocaleData } from "@angular/common";
@@ -33,6 +33,7 @@ registerLocaleData(ru);
     MapService,
     provideNzConfig(GlobalNgZorroConfig),
     provideNzI18n(ru_RU),
+    GlobalNzZorroDateProvider,
   ],
   bootstrap: [AppComponent],
 })
