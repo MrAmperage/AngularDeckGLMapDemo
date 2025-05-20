@@ -8,6 +8,8 @@ import {
   MapService,
   TileLayerDirective,
   TerrainLayerDirective,
+  SimpleMeshLayerDirective,
+  TerrainMeshExtensionDirective,
 } from "angular-deck.gl-map";
 import { provideNzConfig } from "ng-zorro-antd/core/config";
 import { GlobalNgZorroConfig, GlobalNzZorroDateProvider } from "./NzConfig";
@@ -27,6 +29,8 @@ registerLocaleData(ru);
     TerrainLayerDirective,
     DrillingProjectLoaderComponent,
     ToolbarWidgetComponent,
+    SimpleMeshLayerDirective,
+    TerrainMeshExtensionDirective,
   ],
   providers: [
     DeckGLComponent,

@@ -16,4 +16,7 @@
     [ElevationData]="'https://s3.amazonaws.com/elevation-tiles-prod/normal/{z}/{x}/{y}.png'"
     [Texture]="'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'"
   />
+  <SimpleMeshLayerDirective [Id]="'SimpleMeshDirective'">
+    <TerrainMeshExtensionDirective />
+  </SimpleMeshLayerDirective>
 </DeckGLComponent>
