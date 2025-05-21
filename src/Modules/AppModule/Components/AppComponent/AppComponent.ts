@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { CustomMapController } from "angular-deck.gl-map";
+import { CustomMapController, MapModel } from "angular-deck.gl-map";
 
 @Component({
   selector: "AppComponent",
@@ -9,4 +9,10 @@ import { CustomMapController } from "angular-deck.gl-map";
 })
 export default class AppComponent {
   MapController = CustomMapController;
+  Data: MapModel[] = [
+    new MapModel({
+      Position: [87.15609686851167, 54.22993514648337, 0],
+      Mesh: "",
+    }),
+  ];
 }
