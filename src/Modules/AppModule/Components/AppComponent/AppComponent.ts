@@ -11,7 +11,7 @@ export default class AppComponent {
   MapController = CustomMapController;
   Data: MapModel[] = [
     new MapModel({
-      Position: [87.15609686851167, 54.22993514648337, 0],
+      Coordinates: [87.15609686851167, 54.22993514648337, 0],
       Mesh: "",
       Color: [256, 0, 0],
     }),
