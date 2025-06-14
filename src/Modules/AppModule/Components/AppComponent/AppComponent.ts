@@ -10,10 +10,13 @@ import { CustomMapController, MapModel } from "angular-deck.gl-map";
 export default class AppComponent {
   MapController = CustomMapController;
   Data: MapModel[] = [
-    new MapModel({
-      Coordinates: [87.15609686851167, 54.22993514648337, 0],
-      Mesh: "",
-      Color: [256, 0, 0],
-    }),
+    new MapModel(
+      {
+        Coordinates: [87.15609686851167, 54.22993514648337, 0],
+        Mesh: "",
+        Color: [256, 0, 0],
+      },
+      "Three"
+    ),
   ];
 }
