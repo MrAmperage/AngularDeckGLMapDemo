@@ -3,13 +3,14 @@ import { BrowserModule } from "@angular/platform-browser";
 import AppComponent from "./Components/AppComponent/AppComponent";
 import {
   DeckGLComponent,
-  DrillingProjectLoaderComponent,
+  DrillingProjectsLoaderComponent,
   ToolbarWidgetComponent,
   MapService,
   TileLayerDirective,
   TerrainLayerDirective,
   SimpleMeshLayerDirective,
   TerrainMeshExtensionDirective,
+  TransportsLoaderComponent,
 } from "angular-deck.gl-map";
 import { provideNzConfig } from "ng-zorro-antd/core/config";
 import { GlobalNgZorroConfig, GlobalNzZorroDateProvider } from "./NzConfig";
@@ -27,7 +28,8 @@ registerLocaleData(ru);
     DeckGLComponent,
     TileLayerDirective,
     TerrainLayerDirective,
-    DrillingProjectLoaderComponent,
+    DrillingProjectsLoaderComponent,
+    TransportsLoaderComponent,
     ToolbarWidgetComponent,
     SimpleMeshLayerDirective,
     TerrainMeshExtensionDirective,
