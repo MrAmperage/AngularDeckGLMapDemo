@@ -6,17 +6,9 @@
   <ToolbarWidgetComponent [Id]="'ToolbarWidget'">
     <DrillingProjectsLoaderComponent [Id]="'DrillingProjects'" />
     <TransportsLoaderComponent [Id]="'Transports'" />
+    <TerrainLoaderComponent [Id]="'Terrain'" />
   </ToolbarWidgetComponent>
-  <TerrainLayerDirective
-    [Id]="'TerrainLayer'"
-    [ElevationDecoder]="{   
-      rScaler: 2,
-      gScaler: 0,
-      bScaler: 0,
-      offset: 0}"
-    [ElevationData]="'https://s3.amazonaws.com/elevation-tiles-prod/normal/{z}/{x}/{y}.png'"
-    [Texture]="'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'"
-  />
+
   <SimpleMeshLayerDirective
     [Id]="'SimpleMeshDirective'"
     [Mesh]="'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/humanoid_quad.obj'"
