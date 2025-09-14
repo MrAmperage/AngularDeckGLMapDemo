@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { CustomMapController, MapModel } from "angular-deck.gl-map";
+import { CustomMapController, MapModel } from "@mr.amperage/angular-deck.gl";
+import { OBJLoader } from "@loaders.gl/obj";
 
 @Component({
   selector: "AppComponent",
@@ -8,6 +9,7 @@ import { CustomMapController, MapModel } from "angular-deck.gl-map";
   standalone: false,
 })
 export default class AppComponent {
+  ModelLoader = OBJLoader;
   MapController = CustomMapController;
   Data: MapModel[] = [
     new MapModel(
