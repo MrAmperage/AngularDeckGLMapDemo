@@ -3,23 +3,8 @@
   [Zoom]="14"
   [Controller]="this.MapController"
 >
-  <TerrainLayerDirective
-    [Id]="'TerrainLayer'"
-    [ElevationDecoder]="{   
-      rScaler: 2,
-      gScaler: 0,
-      bScaler: 0,
-      offset: 0}"
-    [ElevationData]="'https://s3.amazonaws.com/elevation-tiles-prod/normal/{z}/{x}/{y}.png'"
-    [Texture]="'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'"
+  <TileLayerDirective
+    [Id]="'TileLayer'"
+    [UrlTemplate]="'http://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'"
   />
-  <SimpleMeshLayerDirective
-    [Id]="'SimpleMeshDirective'"
-    [Mesh]="'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/humanoid_quad.obj'"
-    [Data]="this.Data"
-    [SizeScale]="30"
-    [Loaders]="[this.ModelLoader]"
-  >
-    <TerrainMeshExtensionDirective />
-  </SimpleMeshLayerDirective>
 </DeckGLComponent>
